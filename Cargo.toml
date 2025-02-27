@@ -1,0 +1,15 @@
+[package]
+name = "tap-sdk"
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+authors = ["Vladlen Chekunov <chekunov@national.shitposting.agency>"]
+
+[[example]]
+name = "events"
+path = "examples/events.rs"
+
+[dependencies]
+bluer = "^0.17"
+
