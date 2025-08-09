@@ -2,14 +2,22 @@
 name = "tap-sdk"
 version = "0.1.0"
 edition = "2021"
-readme = "README.md"
-license = "MIT OR Apache-2.0"
+readme = "crates-io.md"
+description = "TAP rust SDK allows you to build rust app that can establish BLE connection with Tap Strap and TapXR, send commands and receive events and data."
 authors = ["Vladlen Chekunov <chekunov@national.shitposting.agency>"]
+repository = "https://github.com/VladChekunov/tap-rust-sdk"
+license-file = "LICENSE"
 
 [[example]]
-name = "events"
-path = "examples/events.rs"
+name = "example"
+path = "examples/example.rs"
 
 [dependencies]
-bluer = "^0.17"
-
+btleplug = "0.11.8"
+crossbeam-channel = "0.5.14"
+event-listener = "5.4.0"
+futures = "0.3"
+strum = "0.27.1"
+strum_macros = "0.27.1"
+tokio = { version = "1.0", features = ["full"] }
+uuid = "1.16.0"
